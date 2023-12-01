@@ -12,6 +12,6 @@ const blogLogout = async () => {
   };
 
 document.querySelector('#blog-logout')
-document.addEventListener('click', chessLogout);
+document.addEventListener('click', blogLogout);
   
   

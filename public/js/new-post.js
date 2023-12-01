@@ -1,5 +1,5 @@
 // Create new post public/js/new-post.js
-const newChessPostFormHandler = async (event) => {
+const newBlogPostFormHandler = async (event) => {
     event.preventDefault();
   
     const title = document.querySelector('#title-new-blog-post').value.trim();

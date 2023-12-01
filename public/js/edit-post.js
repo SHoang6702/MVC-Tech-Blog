@@ -2,7 +2,7 @@ const post_id = window.location.toString().split("/")[
     window.location.toString().split("/").length - 1
   ];
   
-  const updateChessPostFormHandler = async (event) => {
+  const updateBlogPostFormHandler = async (event) => {
     event.preventDefault();
   
     const title = document.querySelector("#title-update-blog-post").value.trim();
@@ -25,7 +25,7 @@ const post_id = window.location.toString().split("/")[
     }
   };
   
-  const deleteChessPostFormHandler = async (event) => {
+  const deleteBlogPostFormHandler = async (event) => {
     event.preventDefault();
   
     const response = await fetch(`/api/posts/${post_id}`, {
