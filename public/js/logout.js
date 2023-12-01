@@ -11,7 +11,6 @@ const blogLogout = async () => {
     }
   };
 
-document.querySelector('#blog-logout')
-document.addEventListener('click', blogLogout);
+document.querySelector('#blog-logout').addEventListener('click', blogLogout);
   
   

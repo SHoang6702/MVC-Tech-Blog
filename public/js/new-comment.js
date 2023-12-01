@@ -24,7 +24,6 @@ const newChessCommentFormHandler = async (event) => {
   
   
   
-document.querySelector('.new-chess-comment-form')
-document.addEventListener('submit', newChessCommentFormHandler);
+document.querySelector('.new-chess-comment-form').addEventListener('submit', newChessCommentFormHandler);
   
   

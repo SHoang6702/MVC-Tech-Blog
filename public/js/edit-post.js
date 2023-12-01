@@ -39,8 +39,6 @@ const post_id = window.location.toString().split("/")[
     }
   };
   
-document  .querySelector("#update-chess-post")
-document.addEventListener("click", updateBlogPostFormHandler);
+document.querySelector("#update-chess-post").addEventListener("click", updateBlogPostFormHandler);
   
-document.querySelector("#delete-chess-post")
-document.addEventListener("click", deleteBlogPostFormHandler);
+document.querySelector("#delete-chess-post").addEventListener("click", deleteBlogPostFormHandler);
