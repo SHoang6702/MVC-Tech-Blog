@@ -2,8 +2,8 @@
 const newChessPostFormHandler = async (event) => {
     event.preventDefault();
   
-    const title = document.querySelector('#title-new-chess-post').value.trim();
-    const content = document.querySelector('#content-new-chess-post').value.trim();
+    const title = document.querySelector('#title-new-blog-post').value.trim();
+    const content = document.querySelector('#content-new-blog-post').value.trim();
   
     if (title && content) {
       const response = await fetch('/api/posts', {
@@ -13,16 +13,16 @@ const newChessPostFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/dashboard'); // When successful, load the dashboard page
+        document.location.replace('/dashboard'); 
       } else {
-        alert('Failed to create a new post.'); // When unsuccessful, show alert
+        alert('Failed to create a new post.'); 
       }
     }
   };
   
-  // Event listeners
-  const newChessPostForm = document.querySelector('.new-chess-post-form');
-  if (newChessPostForm) {
-    newChessPostForm.addEventListener('submit', newChessPostFormHandler);
-  }
+
+ document
+  .querySelector('.new-blog-post-form')
+  .addEventListener('submit', newblogPostFormHandler);
+  
   

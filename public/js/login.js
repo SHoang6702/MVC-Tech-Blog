@@ -22,8 +22,8 @@ const blogLoginFormHandler = async (event) => {
   };
   
 
-  const chessLoginForm = document.querySelector('.blog-login-form');
-  if (chessLoginForm) {
-    chessLoginForm.addEventListener('submit', blogLoginFormHandler);
-  }
+document
+  .querySelector('.blog-login-form')
+  .addEventListener('submit', blogLoginFormHandler);
+
   

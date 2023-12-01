@@ -3,7 +3,7 @@ const newChessCommentFormHandler = async (event) => {
   
     const post_id = parseInt(window.location.pathname.split('/').pop());
   
-    const content = document.querySelector('#content-new-chess-comment').value.trim();
+    const content = document.querySelector('#content-new-blog-comment').value.trim();
   
     if (content) {
       const response = await fetch(`/api/comments`, {
@@ -13,20 +13,19 @@ const newChessCommentFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.reload(); // When successful, reload the same page
+        document.location.reload();
       } else {
         console.log('Response status:', response.status);
         console.log('Response text:', await response.text());
-        alert('Failed to create a comment.'); // When unsuccessful, show alert
+        alert('Failed to create a comment.');
       }
     }
   };
   
   
   
-  // Event listeners
-  const newChessCommentForm = document.querySelector('.new-chess-comment-form');
-  if (newChessCommentForm) {
-    newChessCommentForm.addEventListener('submit', newChessCommentFormHandler);
-  }
+document
+.querySelector('.new-chess-comment-form')
+  .addEventListener('submit', newChessCommentFormHandler);
+  
   
