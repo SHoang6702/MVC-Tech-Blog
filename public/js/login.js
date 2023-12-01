@@ -22,8 +22,7 @@ const blogLoginFormHandler = async (event) => {
   };
   
 
-document
-  .querySelector('.blog-login-form')
-  .addEventListener('submit', blogLoginFormHandler);
+document.querySelector('.blog-login-form')
+document.addEventListener('submit', blogLoginFormHandler);
 
   

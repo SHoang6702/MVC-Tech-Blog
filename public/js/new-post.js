@@ -21,8 +21,7 @@ const newChessPostFormHandler = async (event) => {
   };
   
 
- document
-  .querySelector('.new-blog-post-form')
-  .addEventListener('submit', newblogPostFormHandler);
+document.querySelector('.new-blog-post-form')
+document.addEventListener('submit', newblogPostFormHandler);
   
   
