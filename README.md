@@ -2,6 +2,9 @@
 
 My personal Tech Blog!
 
+![blog working!](./public/images/blogexample.png)
+## Note
+Works on Microsoft Edge and Google. For some reason on my PC on Google it is blocked by my ad blocker (it works on Edge on my PC). On my laptop it works on both Edge and Google without issue.
 ## Installation
 
 Web based application from the link below:
