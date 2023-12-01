@@ -1,4 +1,4 @@
-const newChessCommentFormHandler = async (event) => {
+const newBlogCommentFormHandler = async (event) => {
     event.preventDefault();
   
     const post_id = parseInt(window.location.pathname.split('/').pop());
@@ -24,6 +24,6 @@ const newChessCommentFormHandler = async (event) => {
   
   
   
-document.querySelector('.new-chess-comment-form').addEventListener('submit', newChessCommentFormHandler);
+document.querySelector('.new-blog-comment-form').addEventListener('submit', newBlogCommentFormHandler);
   
   
